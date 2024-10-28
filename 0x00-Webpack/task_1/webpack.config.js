@@ -1,16 +1,11 @@
+// webpack.config.js
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js',
-    },
-    mode: 'production',
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'public/index.html')
-        }),
-    ],
+  entry: './js/dashboard_main.js',  
+  output: {
+    filename: 'bundle.js',             // Output bundle filename
+    path: path.resolve(__dirname, 'public'), // Output directory
+  },
+  mode: 'production',
 };
