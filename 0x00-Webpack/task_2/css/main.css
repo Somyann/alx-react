@@ -1,13 +1,12 @@
 #logo {
+  background-image: url('../assests/holberton-logo.jpg');
+  background-size: 200px 200px; 
   width: 200px;
   height: 200px;
-  background-image: url('../assets/holberton-logo.jpg');
-  background-size: 200px 200px;
-  background-position: center;
 }
 
 #count {
   font-weight: bold;
-  display: inline-block;
-  margin-left: 10px;
+  display: inline-block; /* Allow inline styling */
+  margin-left: 10px; 
 }
