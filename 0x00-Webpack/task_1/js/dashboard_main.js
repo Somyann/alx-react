@@ -3,11 +3,11 @@ import { debounce } from 'lodash';
 
 let count = 0;
 function updateCounter() {
-    count++;
+    count+= 1;
     $('#count').text(`${count} clicks on the button`);
 }
 
-$(document).ready(function () {
+$(document).ready(() => {
     $('body').append('<p>Holberton Dashboard</p>');
     $('body').append('<p>Dashboard data for the students</p>');
     $('body').append('<button>Click here to get started</button>');
