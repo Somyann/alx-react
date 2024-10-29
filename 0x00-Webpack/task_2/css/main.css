@@ -1,13 +1,20 @@
-#logo {
-  background-image: url('../assests/holberton-logo.jpg');
-  background-size: 200px 200px;
-  background-repeat: no-repeat; 
-  width: 200px;
-  height: 200px;
+/* Position the counter text to the right of the button and make it bold */
+button {
+  position: relative;
 }
 
-#count {
+button .counter {
+  position: absolute;
+  display: inline-block;
   font-weight: bold;
-  display: inline-block; /* Allow inline styling */
-  margin-left: 10px; 
+  margin-left: 10px;
+}
+
+
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/holberton-logo.jpg');
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
 }
