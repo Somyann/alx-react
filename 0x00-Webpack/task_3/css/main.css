@@ -1,0 +1,20 @@
+/* Position the counter text to the right of the button and make it bold */
+button {
+  position: relative;
+}
+
+button .counter {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/holberton-logo.jpg');
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}
