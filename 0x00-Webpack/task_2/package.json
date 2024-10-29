@@ -1,10 +1,10 @@
 {
-  "name": "task_1",
+  "name": "task_2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dashboard_main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,8 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21"
   }

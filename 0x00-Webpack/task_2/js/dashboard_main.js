@@ -9,9 +9,7 @@ function updateCounter() {
   count += 1;  // Increment the count by 1
   $('#count').text(`${count} clicks on the button`);
 }
-
-// Bind the debounce function to the click event on the button
-$(document).ready(function () {
+function addElements() {
   $('#logo').css('background-image', 'url(../assets/holberton-logo.jpg)');
   $('body').append('<div id="logo"></div>'); 
   $('body').append('<p>Holberton Dashboard</p>');
@@ -19,8 +17,9 @@ $(document).ready(function () {
   $('body').append('<button id="clickButton">Click here to get started</button>');
   $('body').append('<p id="count"></p>');
   $('body').append('<p>Copyright - Holberton School</p>');
-
-  const debouncedUpdateCounter = debounce(updateCounter, 300);
-
+}
+  $(document).ready(() => {
+    addElements();
+    const debouncedUpdateCounter = debounce(updateCounter, 500);
   $('#clickButton').on('click', debouncedUpdateCounter);
 });
