@@ -23,16 +23,33 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,  // Image loaders
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]'
+        },
         use: [
           {
-            loader: 'file-loader',
+            loader: 'image-webpack-loader',   // Image optimization loader
             options: {
-              outputPath: 'images',
+              bypassOnDebug: true,            // Use optimization in production only
+              disable: true,                  // Disable during development for faster builds
             },
           },
-          'image-webpack-loader',   // Image optimization loader
         ],
       },
+      {
+        test: /\.(js|jsx)$/,  // Babel loader for JavaScript and JSX
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  }
 };
