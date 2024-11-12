@@ -8,7 +8,7 @@ Create a src directory with a index.js in it.
 The file should import jquery and add three different paragraphs to the page body: (refer to this link under the Babel section for importing jQuery)
 Holberton Dashboard
 
-Dashboard data for the students
+Dashboard data for the students.
 
 Copyright - Holberton School
 Create a dist/index.html. Import your main.js in the body.

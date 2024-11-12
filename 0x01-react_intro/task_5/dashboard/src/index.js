@@ -1,5 +1,3 @@
-import './styles.css'; // Import CSS file
+import './styles.css'; // Import the CSS file
 
-const app = document.createElement('div');
-app.innerHTML = '<h2>This is a simple Webpack setup!</h2>';
-document.body.appendChild(app);
+console.log('Hello, Webpack!');
