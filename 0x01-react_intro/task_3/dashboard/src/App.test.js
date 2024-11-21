@@ -22,3 +22,4 @@ describe('App component', () => {
     expect(wrapper.find('.App-footer').length).toBe(1);
   });
 });
+
