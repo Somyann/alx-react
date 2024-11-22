@@ -1,3 +1,7 @@
+import accessImmutableObject from './2-nested';
+import { Map } from 'immutable';
+
+
 const data = {
   name: {
     first: "Guillaume",
