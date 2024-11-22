@@ -1,41 +1,21 @@
 import { List, Map } from 'immutable';
 
-function mergeDeeplyElements(page1, page2) {
-  // Convert the objects to Immutable Maps
+// Function to concatenate two arrays and return a List
+function concatElements(page1, page2) {
+  return List(page1).concat(List(page2));
+}
+
+// Function to merge two objects and return a List of their values
+function mergeElements(page1, page2) {
   const map1 = Map(page1);
   const map2 = Map(page2);
 
-  // Deeply merge the maps
-  const mergedMap = map1.mergeDeep(map2);
+  
+  const mergedMap = map1.merge(map2);
 
-  // Return a List containing the values of the merged map
   return List(mergedMap.valueSeq());
 }
 
-// Example Usage
-const page1 = {
-  'user-1': {
-    id: 1,
-    name: 'test',
-    likes: {
-      1: {
-        uid: 1234,
-      },
-    },
-  },
-};
 
-const page2 = {
-  'user-1': {
-    likes: {
-      2: {
-        uid: 134,
-      },
-    },
-  },
-};
+export {mergeElements, concatElements};
 
-const result = mergeDeeplyElements(page1, page2).toJS();
-console.log(result);
-
-export default mergeDeeplyElements;
