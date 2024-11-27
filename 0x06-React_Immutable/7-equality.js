@@ -16,3 +16,5 @@ const map2 = Map({
 });
 
 console.log(areMapsEqual(map1, map2));
+
+export { areMapsEqual };
