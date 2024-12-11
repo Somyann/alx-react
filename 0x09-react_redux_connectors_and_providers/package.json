@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "immutable": "^5.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.2.9",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "name": "0x09-react_redux_connectors_and_providers",
+  "version": "1.0.0",
+  "description": "Writing Tests What You'll Learn Recommended practices for testing apps using Redux Examples of test configuration and setup Guiding Principles The guiding principles for testing Redux logic closely follow that of React Testing Library:",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
